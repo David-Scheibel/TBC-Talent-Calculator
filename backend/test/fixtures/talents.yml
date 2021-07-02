@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  spec: one
+  talent_id: 
+  icon: MyString
+  name: MyString
+  points: 
+  dependency: MyString
+  tier: 
+
+two:
+  spec: two
+  talent_id: 
+  icon: MyString
+  name: MyString
+  points: 
+  dependency: MyString
+  tier: 
