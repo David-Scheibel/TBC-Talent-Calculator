@@ -11,14 +11,14 @@ const SignUp = () => {
     let signUp = (e) => {
         e.preventDefault()
 
-        fetch("http://localhost:3000/riders", {
+        fetch("http://localhost:3000/users", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
                 email: e.target[0].value,
-                name: e.target[1].value,
+                username: e.target[1].value,
                 password: e.target[2].value,
             })
         })
@@ -45,8 +45,8 @@ const SignUp = () => {
                     </Form.Group>
 
                     <Form.Group controlId="formBasicName">
-                        <Form.Label>Name</Form.Label>
-                        <Form.Control type="name" placeholder="Enter name" />
+                        <Form.Label>Username</Form.Label>
+                        <Form.Control type="name" placeholder="Enter a username" />
                     </Form.Group>
 
                     <Form.Group controlId="formBasicPassword">

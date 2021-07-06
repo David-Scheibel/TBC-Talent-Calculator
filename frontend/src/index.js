@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { Router } from 'react-router';
-import { createBrowserHistory } from 'history/createBrowserHistory';
+// import { createBrowserHistory } from 'history/createBrowserHistory';
 
 // Redux
 import { createStore, applyMiddleware, compose } from 'redux';
@@ -13,8 +14,11 @@ import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import reducers from './reducers'; // implicitly knows to look in index.js
 
+import { createBrowserHistory } from 'history';
 // require("history").createBrowserHistory
 export const history = createBrowserHistory();
+
+const composeEnhancers = (process.env.NODE_ENV === 'development' ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : null) || compose;
 
 const store = createStore(
   reducers, composeEnhancers(
