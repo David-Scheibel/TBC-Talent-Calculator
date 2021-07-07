@@ -28,17 +28,17 @@ function App() {
 
           <Route path='/signup' component={Signup}/>
 
-          <Route path='/talents'><Talents /></Route>
+          <Route path='/talents' exact><Talents /></Route>
 
-          <Route path='/druid'><Druid /></Route>
-          <Route path='/hunter'><Hunter /></Route>
-          <Route path='/mage'><Mage /></Route>
-          <Route path='/paladin'><Paladin /></Route>
-          <Route path='/priest'><Priest /></Route>
-          <Route path='/rogue'><Rogue /></Route>
-          <Route path='/shaman'><Shaman /></Route>
-          <Route path='/warlock'><Warlock /></Route>
-          <Route path='/warrior'><Warrior /></Route>
+          <Route path='/talents/druid'><Druid /></Route>
+          <Route path='/talents/hunter'><Hunter /></Route>
+          <Route path='/talents/mage'><Mage /></Route>
+          <Route path='/talents/paladin'><Paladin /></Route>
+          <Route path='/talents/priest'><Priest /></Route>
+          <Route path='/talents/rogue'><Rogue /></Route>
+          <Route path='/talents/shaman'><Shaman /></Route>
+          <Route path='/talents/warlock'><Warlock /></Route>
+          <Route path='/talents/warrior'><Warrior /></Route>
 
         </Switch>
       </div>
